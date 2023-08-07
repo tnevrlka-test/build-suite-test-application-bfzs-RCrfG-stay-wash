@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-annotations-cadv
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/tnevrlka-test/build-e2e-fsud-tenant/build-suite-test-application-bfzs/test-annotations-cadv@sha256:9d12da5b5f0b9d5454b8d14c0140f48ef166cce83d76080fa0edc29497ce44fb
+        name: my-nginx
+        resources: {}
+status: {}
